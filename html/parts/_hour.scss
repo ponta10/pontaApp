@@ -1,0 +1,35 @@
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  & .hourBox {
+    width: 28%;
+    height: 12vh;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    & h3 {
+      color: rgba(230, 115, 48, 0.8);
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:nth-of-type(2) {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    & h2 {
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

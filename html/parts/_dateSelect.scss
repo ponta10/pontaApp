@@ -1,0 +1,52 @@
+.date {
+  text-align: center;
+  & p {
+    font-weight: 900;
+  }
+  & span {
+    &:nth-child(1) {
+      margin-right: 5px;
+      color: #0f71bc;
+      font-weight: 900;
+    }
+    &:nth-child(2) {
+      margin-left: 5px;
+      color: #97b9d1;
+    }
+  }
+  & select {
+    appearance: none;
+    text-align: center;
+    font-weight: 900;
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+    -color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    background-image: url(img/iconmonstr-angel-down-circle-thin-240.png);
+    background-position: right 5px center;
+    background-size: 20px 20px;
+    cursor: pointer;
+  }
+}
+
+.before {
+  position: fixed;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.after {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  & img {
+    width: 50px;
+    height: 50px;
+  }
+}

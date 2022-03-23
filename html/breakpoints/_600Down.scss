@@ -1,0 +1,100 @@
+header{
+  height: 8vh;
+  line-height: 50px;
+}
+
+.hour{
+  margin: 8px 0;
+}
+
+.circle{
+  margin:  8px 0;
+}
+
+.before {
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.after {
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.date{
+  & select{
+    background-image: none;
+  }
+}
+
+.return{
+  &-btn{
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+  }
+}
+
+.modalReturn{
+  & .scroll{
+    margin-top: 50px;
+  }
+}
+
+.choice {
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+  font-size: 12px;
+  & .image-con {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+  }
+  & .image-lan {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+  }
+  & span {
+    &:nth-of-type(2) {
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-of-type(3) {
+      position: absolute;
+      left: 60%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-of-type(4) {
+      position: absolute;
+      left: 80%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  & input {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.selected{
+  width: 92%;
+}

@@ -1,0 +1,38 @@
+
+.delete {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  & p {
+    text-align: center;
+    color: rgb(235, 92, 26);
+    font-size: 25px;
+    font-weight: 700;
+  }
+  & input {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+  }
+  & .yes {
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  & .no {
+    margin-top: 20px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

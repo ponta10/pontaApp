@@ -1,0 +1,21 @@
+header {
+  background-color: #fff;
+  display: flex;
+  height: 10vh;
+  line-height: 70px;
+  align-items: center;
+  // padding: 0 10px;
+  & .logo {
+    display: flex;
+  }
+  & img {
+    height: 8vh;
+    object-fit: cover;
+  }
+  & p {
+    margin-left: 10px;
+  }
+  & section {
+    display: none;
+  }
+}

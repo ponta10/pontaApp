@@ -1,0 +1,250 @@
+.modal {
+  position: absolute;
+  width: 95vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  transform: translateY(100%);
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 9;
+  transition: transform 0.5s;
+  padding: 15px;
+  & > div {
+    margin: 20px 0;
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+  & input {
+    background-color: #f5f5f8;
+    width: 95%;
+    padding: 5px;
+  }
+  & textarea {
+    background-color: #f5f5f8;
+    width: 95%;
+  }
+  & label {
+    background-color: #f5f5f8;
+    padding: 2px;
+    margin: 10px 2px;
+    border-radius: 10px;
+    margin: 0px;
+  }
+  & .closeBtn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+    & input {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  & .closeBtn2 {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  & .error {
+    color: red;
+    display: none;
+  }
+}
+
+
+#loader {
+  position: absolute;
+  width: 80px; /*ローディングアイコンの横サイズ*/
+  height: 80px; /*ローディングアイコンの縦サイズ*/
+  border-radius: 50%; /*CSS3で円を書く*/
+  border: 12px solid #ee8026; /*円に○の白枠をつける*/
+  border-right-color: transparent; /*円の右にC状の空きをつける*/
+  z-index: 55;
+  top: 40%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.inview {
+  opacity: 1;
+  animation: spin 1.2s linear 3; /*1秒毎にくるくる回転するアニメーション*/
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  } /*0%の時は20％の透明度*/
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  } /*50%の時は透明度なし*/
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.2;
+  } /*100%の時に20％の透明度に戻る*/
+}
+
+
+.end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  text-align: center;
+}
+.end p {
+  font-size: 25px;
+}
+.fa-check-circle {
+  color: greenyellow;
+  font-size: 80px;
+}
+
+.endText {
+  color: greenyellow;
+  margin-bottom: -10px;
+}
+
+
+.modalReturn {
+  position: absolute;
+  width: 95vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  transform: translateY(100%);
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 9;
+  transition: transform 0.5s;
+  padding: 15px;
+  overflow: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & .closeBtn3 {
+    position: fixed;
+    top: 2%;
+    right: 3%;
+    border-radius: 50%;
+    cursor: pointer;
+    & img {
+      width: 30px;
+      height: 30px;
+    }
+    & p {
+      color: #ccc;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+    }
+  }
+}
+
+.choice {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  list-style: none;
+  border: solid 2px rgba(0, 0, 0, 0.05);
+  font-size: 20px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0.5px 0.5px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  background-color: rgba(245, 109, 18, 0.3);
+  text-align: left;
+  font-size: 18px;
+  & .image-con {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+  }
+  & .image-lan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+  }
+  & span {
+    &:nth-of-type(2) {
+      position: absolute;
+      left: 24%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-of-type(3) {
+      position: absolute;
+      left: 54%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-of-type(4) {
+      position: absolute;
+      left: 73%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  & input {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+.checkbox-fontas {
+  position: relative;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.checkbox + .checkbox-fontas:before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  color: #ccc;
+}
+.checkbox:checked + .checkbox-fontas:before {
+  color: #1e90ff;
+}
+
+.checkbox + .twitterFontas:before {
+  font-size: 35px;
+}
+
+.select {
+  background-color: #f5f5f8;
+  padding: 10px;
+  cursor: pointer;
+}

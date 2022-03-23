@@ -1,0 +1,79 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  
+  & .logo{
+    width:42%;
+  }
+  & .btn{
+    display: block;
+    width: 20%;
+    padding: 0;
+    margin-right: 20px;
+  }
+}
+
+.main{
+  width: 90vw;
+  margin: 0 auto;
+  & .data{
+    display: flex;
+    justify-content: space-between;
+  }
+  & article{
+    width: 49%;
+  }
+  
+  & aside{
+    width: 49%;
+  }
+  & .hourBox{
+    height: 24vh;
+    width: 32%;
+  }
+  & .bar{
+    height: 50vh;
+  }
+  & .circle{
+    & .circleBox{
+      height: 76vh;
+      width: 48%;
+    }
+    & svg{
+      margin-top: 50px;
+      transform: scale(1.1);
+    }
+  }
+  & .btn{
+    display: none;
+  }
+}
+
+.graphText,.graphText2{
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+
+.circle{
+  &-language{
+    & li{
+      &::before{
+        content:  "";     /* 空の要素作成 */
+        width:  15px;               /* 幅指定 */
+        height:  15px;              /* 高さ指定 */
+      }
+    }
+  }
+  &-contents{
+    & li{
+      &::before{
+        content:  "";     /* 空の要素作成 */
+        width:  15px;               /* 幅指定 */
+        height:  15px;              /* 高さ指定 */
+      }
+    }
+  }
+}
+
+
